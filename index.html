@@ -2,25 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bridge to Nowhere</title>
+    <title>Bridge to Nowhere</title>
+    
+    <style>
+        .permutation-field {
+            max-width: 20px;
+        }
+    </style>
 </head>
 <body style="text-align: center">
 	<h1>Bridge to Nowhere</h1>
+    <hr>
+    <div id="inputs">
+        <h3>Inputs:</h3>
+	    <p>Number of Cities(n) =
+            <input type="text" id="n">
+        </p>
+        <button id="next" style="font-size: 20px">Next</button>
+        <p id="permutaions">Permutation of Cities(1...n) = <br>
+            
+	    </p>
+    </div>
 	<hr>
-	<h3>Inputs:</h3>
-	<p>Number of Cities(n) =
-        <input type="text" id="n">
-    </p>
-    <p>Permutation of Cities(1...n) =
-        <input type="text" id="p">
-	</p>
-	<hr>
-	<h3>Third: Press Run to run the algorithm:</h3>
+	<h3>Press Run to run the algorithm:</h3>
 	<h5>"Refresh the page to restart the algorithm"</h5>
 	<button id="run" style="font-size: 20px">Run</button>
-	<br><br>
-	<canvas id="canvas" height="400px" width="1400px" style="border: 1px solid black"></canvas>
+    <br><br>
+    <div id="result"></div>
+    <!-- spaces between cities(99*2) + cities(100*25) -->
+	<canvas id="canvas" height="400px" width="2698px" style="border: 1px solid black"></canvas>
 	
+	<script src="libraries/jquery-3.3.1.js"></script>
 	<script src="BridgeToNowhere.js"></script>
 </body>
 </html>
