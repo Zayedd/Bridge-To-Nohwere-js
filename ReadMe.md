@@ -1,5 +1,5 @@
 # Bridge to Nowhere Project
-
+This is my algorithms course project.
 ### What does this project include?
 This project includes a project report and source code files.
 ### How to run the application?
